@@ -73,4 +73,12 @@ Se siguen las normas estandar de inclusión de recursos de string con el propós
 Para la detección y analisis de fallos, en su mayoría NullPointerExceptions se utiliza el depurador incluido en Android Studio y se emplea un dispositivo conectado directamente a la máquina desde la cual se despliega la aplicación, hasta el momento se ha hecho uso del depurador general y del depurador anclado a actividades específicas.
 
 ## Snapshots
-![alt text](https://github.com/joviedog/QuarantApp/blob/master/QuarantAppSnapshot%20(1).jpeg)
+![alt text](https://github.com/joviedog/QuarantApp/blob/master/QuarantAppSnapshot%20(1).jpeg "Inicio De Sesion")
+
+![alt text](https://github.com/joviedog/QuarantApp/blob/master/QuarantAppSnapshot%20(2).jpeg)
+
+![alt text](https://github.com/joviedog/QuarantApp/blob/master/QuarantAppSnapshot%20(3).jpeg)
+
+![alt text](https://github.com/joviedog/QuarantApp/blob/master/QuarantAppSnapshot%20(4).jpeg)
+
+![alt text](https://github.com/joviedog/QuarantApp/blob/master/QuarantAppSnapshot%20(5).jpeg)
