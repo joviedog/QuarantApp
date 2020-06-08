@@ -72,13 +72,37 @@ Se siguen las normas estandar de inclusión de recursos de string con el propós
 
 Para la detección y analisis de fallos, en su mayoría NullPointerExceptions se utiliza el depurador incluido en Android Studio y se emplea un dispositivo conectado directamente a la máquina desde la cual se despliega la aplicación, hasta el momento se ha hecho uso del depurador general y del depurador anclado a actividades específicas.
 
-## Snapshots
+## Snapshots de las actividades de la aplicacion
+
+###### Nota Importante: Todas las actividades desarrolladas hasta ahora emplean como plantilla base una actividad vacía. 
+
+###### Pantalla de Landing
+
+Se muestra al iniciar la aplicación, muestra dos botones principales que disparan las actividades correspondientes al inicio de sesión y el registro del usuario.
+
+![alt text](https://github.com/joviedog/QuarantApp/blob/master/QuarantAppSnapshot%20(5).jpeg)
+
+###### Inicio de Sesion
+
+Se muestran los campos para el ingreso de los datos y un botón para disparar la siguiente actividad que permite al usuario acceder a la navegación principal.
+
 ![alt text](https://github.com/joviedog/QuarantApp/blob/master/QuarantAppSnapshot%20(1).jpeg "Inicio De Sesion")
+
+###### Tablero Principal
+
+Se cataloga como la pantalla principal de navegación de la aplicación, le brinda al usuario acceso a las 3 funcionalidades de la aplicación con facilidad. 
 
 ![alt text](https://github.com/joviedog/QuarantApp/blob/master/QuarantAppSnapshot%20(2).jpeg)
 
+###### Social
+
+Muestra los mensajes agregados por otros usuarios usando un RecyclerView que se llena con datos obtenidos de la base de datos de Firebase.
+
 ![alt text](https://github.com/joviedog/QuarantApp/blob/master/QuarantAppSnapshot%20(3).jpeg)
+
+###### Recetas
+
+Muestra las recetas agregadas por otros usuarios usando un RecyclerView que se llena con datos obtenidos de la base de datos de Firebase.
 
 ![alt text](https://github.com/joviedog/QuarantApp/blob/master/QuarantAppSnapshot%20(4).jpeg)
 
-![alt text](https://github.com/joviedog/QuarantApp/blob/master/QuarantAppSnapshot%20(5).jpeg)
