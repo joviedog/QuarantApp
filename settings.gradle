@@ -1,0 +1,2 @@
+rootProject.name='QuarantApp'
+include ':app'

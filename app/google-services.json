@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "883348042017",
+    "firebase_url": "https://quarantgreen.firebaseio.com",
+    "project_id": "quarantgreen",
+    "storage_bucket": "quarantgreen.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:883348042017:android:d33f82664dd80adf3ece60",
+        "android_client_info": {
+          "package_name": "com.example.quarantapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "883348042017-5n8kf8ejrr7orthncvbb93pvd8oau3hh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.quarantapp",
+            "certificate_hash": "abc2e153da030de82fd03feb69bb5f4de3bb4726"
+          }
+        },
+        {
+          "client_id": "883348042017-8hjqcdbm220qfpvppt1iiigehs9ime8o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRwOvxdhZjSdRS_PfkNb_b8Ydtjn2NMr0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "883348042017-8hjqcdbm220qfpvppt1iiigehs9ime8o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
