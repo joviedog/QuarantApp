@@ -3,7 +3,10 @@ Recetas de economía sustentable
 
 ## Programacion
 
-El desarrollo de la aplicación se realiza en Java, utilizando el modelo de programación orientada a objetos. Para el desarrollo se emplea Android Studio como editor base y como dispositivos principales de pruebas telefonos Android conectados directamente a la máquina (No se han utilizado emuladores por el alto consumo de recursos que involucran los mismos.).
+El desarrollo de la aplicación se realiza en Java, utilizando el modelo de programación orientada a objetos. Para el desarrollo se emplea Android Studio como editor base y como dispositivos principales de pruebas telefonos Android conectados directamente a la máquina (No se han utilizado emuladores por el alto consumo de recursos que involucran los mismos).
+
+
+###### Nota: La clonación completa de este repositorio puede producir problemas a la hora de correr. Si decide realizar una copia recuerde hacer los ajustes pertinentes para evitar fallos en su sistema.
 
 El usuario tiene acceso a tres categorías principales.
 
@@ -13,17 +16,17 @@ Puede acceder a las recetas que han subido otros usuarios, y añadir sus recetas
 La actividad principal se compone de un RecyclerView que se va llenando con los datos obtenidos desde una base de datos de Firebase, descrita más adelante. Los datos llegan al RecyclerView a través de un componente adaptador que hereda sus caracteristicas del adaptador base que se provee por el sistema, se almacenan los datos en el adaptador y se cargan directamente al RecyclerView empleando un ViewHolder que crea un componente diseñado previamente (Tarjeta) que es el producto final que el usuario visualiza en su pantalla. Acceder al mismo dispara una nueva actividad con los datos de la receta seleccionada.
 
 ###### En Progreso: Eliminacion de recetas
+Funcionalidad añadida con éxito. Ahora un usuario puede eliminar recetas que el mismo añadió, usuarios ajenos al creador de la receta no pueden eliminar recetas que no sean de su autoría.
 
 ##### Calendario
 
-En progreso...
+Permite acceder a un sistema para la programación de notificaciones relativas a una receta, el usuario puede seleccionar la fecha y hora, en que desea recibir la notificación relativa a sus recetas. La actividad principal se compone de 2 botones y dos labels. Cada botón dispara un fragmento independiente que actua como un selector nativo de la hora y de la fecha respectivamente. Adicionalmente, el usuario tiene la posibilidad de cancelar la notificación que acaba de programar en caso de cometer un error. Finalmente, la aplicación incorpora los estándares de notificaciones implementados desde la versión 8.0 del sistema operativo Android, dónde las notificaciones se ven obligadas a operar a través de canales con el propósito de permitir al usuario desactivar o activar solo aquellas notificaciones que sean relevantes para el uso que le da a la aplicación. 
 
 ##### Social
 
 Permite acceder y leer comentarios de otros usuarios sobre su manejo de la aplicación y su experiencia en el uso de las recetas. 
 La actividad principal se compone de un RecyclerView que se va llenando con los datos obtenidos desde una base de datos de Firebase, descrita más adelante. Los datos llegan al RecyclerView a través de un componente adaptador que hereda sus caracteristicas del adaptador base que se provee por el sistema, se almacenan los datos en el adaptador y se cargan directamente al RecyclerView empleando un ViewHolder que crea un componente diseñado previamente (Tarjeta) que es el producto final que el usuario visualiza en su pantalla.
 
-###### En Progreso: Eliminacion de comentarios
 
 ## Firebase
 
@@ -106,3 +109,32 @@ Muestra las recetas agregadas por otros usuarios usando un RecyclerView que se l
 
 ![alt text](https://github.com/joviedog/QuarantApp/blob/master/QuarantAppSnapshot%20(4).jpeg)
 
+###### Interfaz de recordatorios
+
+![alt text](https://github.com/joviedog/QuarantApp/blob/master/CalendarFunction%20(1).jpeg)
+
+###### Notificaciones 
+
+![alt text](https://github.com/joviedog/QuarantApp/blob/master/CalendarFunction%20(2).jpeg)
+
+# Link de Descarga
+
+Aplicativo
+
+https://drive.google.com/file/d/1u5LxjAvRkOHYZdAY6-AdkksBLAjtmDe8/view?usp=sharing
+
+Video
+
+https://drive.google.com/file/d/1W4DaXMfhm-WLoEd50i194MLgwXWqA_Ix/view?usp=sharing
+
+# Perspectivas
+
+En el marco del desarrollo de la aplicación es posible abrir muchas perspectivas y posibilidades en términos de funcionalidades a las cuales se podría llegar, entre ellas se destacan:
+
+1. Implementación de inicio de sesión con biométrico del telefono: Facilitaría al usuario el inicio de sesión evitando así que deba recordar una contraseña y agilizando el proceso de consulta de recetas.
+
+2. Implementación de edición de comentarios: La edición de comentarios se plantea como una necesidad para aquellos usuarios que lleguen a cometer errores en términos de escritura o que deseen añadir cosas adicionales a su receta.
+
+3. Implementación de iteracciones con API como Google Calendar: El uso de APIs como Google Calendar permitiría que el usuario pueda incorporar en una herramienta que ya usa constantemente las notificaciones y planear de forma más organizada en el largo plazo.
+
+4. Implementación en otras plataformas a través de lenguajes nativos o frameworks multiplataforma.
