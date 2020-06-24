@@ -30,7 +30,8 @@ public class HomeMenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Inicia la actividad de Calendario y recordatorios
-                // TO DO TO DO TO DO TO DO
+                Intent intent_cal = new Intent(HomeMenuActivity.this, CalendarActivity.class);
+                startActivity(intent_cal);
                 Toast.makeText(HomeMenuActivity.this, "Calendario", Toast.LENGTH_LONG).show();
             }
         });

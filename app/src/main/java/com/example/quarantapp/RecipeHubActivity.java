@@ -87,6 +87,7 @@ public class RecipeHubActivity extends AppCompatActivity implements ImageAdapter
         display_recipe.putExtra("Titulo", mUploads.get(position).getmName());
         display_recipe.putExtra("Imagen", mUploads.get(position).getmImageUrl());
         display_recipe.putExtra("Pasos", mUploads.get(position).getmSteps());
+        display_recipe.putExtra("Usuario", mUploads.get(position).getmUserID());
         startActivity(display_recipe);
     }
 }

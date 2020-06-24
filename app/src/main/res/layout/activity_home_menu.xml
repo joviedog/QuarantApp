@@ -81,11 +81,11 @@
 
         <TextView
             android:id="@+id/calendartext"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/calendario"
+            android:layout_width="198dp"
+            android:layout_height="40dp"
+            android:text="@string/recordatorios"
             android:textColor="#000000"
-            android:textSize="32sp"
+            android:textSize="30sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.111"

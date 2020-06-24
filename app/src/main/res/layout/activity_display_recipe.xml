@@ -2,10 +2,11 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recipeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DisplayRecipeActivity"
-    android:background="@drawable/gradientmain">
+    android:background="@drawable/gradientmain"
+    tools:context=".DisplayRecipeActivity">
 
     <TextView
         android:id="@+id/nombreRecetaDisplay"
@@ -20,26 +21,13 @@
         app:layout_constraintHorizontal_bias="0.072"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.053" />
-
-    <TextView
-        android:id="@+id/pasosRecetaDisplay"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="155dp"
-        android:layout_marginEnd="283dp"
-        android:layout_marginBottom="332dp"
-        android:text="Pasos Receta"
-        app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
-        app:layout_constraintEnd_toEndOf="@+id/scrollView2"
-        app:layout_constraintHorizontal_bias="0.578"
-        app:layout_constraintStart_toStartOf="@+id/scrollView2"
-        app:layout_constraintTop_toTopOf="@+id/scrollView2" />
+        app:layout_constraintVertical_bias="0.042" />
 
     <ImageView
         android:id="@+id/imagenRecetaDisplay"
         android:layout_width="377dp"
         android:layout_height="225dp"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.47"
@@ -48,21 +36,44 @@
         app:layout_constraintVertical_bias="0.183"
         app:srcCompat="@drawable/logo2" />
 
-    <ScrollView
-        android:id="@+id/scrollView2"
-        android:layout_width="377dp"
-        android:layout_height="338dp"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/recipes"
+        android:layout_width="381dp"
+        android:layout_height="384dp"
+        android:background="@drawable/round_corners"
+        android:clickable="true"
+        android:focusable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.872"
-        android:background="@drawable/round_corners">
+        app:layout_constraintVertical_bias="0.916">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
-    </ScrollView>
+
+        <TextView
+            android:id="@+id/pasosRecetaDisplay"
+            android:layout_width="343dp"
+            android:layout_height="353dp"
+            android:text="Pasos Receta"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/deleteRecipeLayout"
+        android:layout_width="83dp"
+        android:layout_height="43dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.908"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+
